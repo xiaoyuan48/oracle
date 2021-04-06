@@ -53,6 +53,20 @@ PL/SQL过程：
 
 ![3.7](3.7.png)
 
+分析：
+
+- recursive calls:递归调用次数。
+- db block gets:从buffer cache中读取的 block的数量。
+- consistent gets:从 buffer cache中读取的undo数据的block数量。
+- physical reads:从磁盘读取的 block的数量。
+- redo size:DML生成的redo 的大小。
+- sorts (memory):在内存执行的排序量。
+- sorts (disk):在磁盘上执行的排序量。
+
+执行计划一：
+
+![3.10](3.10.png)
+
 查询语句二：
 
 ![3.8](3.8.png)
@@ -60,3 +74,7 @@ PL/SQL过程：
 查询结果二:
 
 ![3.9](3.9.png)
+
+执行计划二：
+
+![3.11](3.11.png)
